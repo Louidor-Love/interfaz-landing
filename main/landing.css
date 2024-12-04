@@ -256,18 +256,16 @@ header.nav-links a:hover {
 
 .destinations-container .image-slider{
     display: flex;
-    width:100%;
+    width: 80%;
     align-items: flex-start;
     gap: 8px;
     flex-shrink: 0;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    transition: transform 30.30s ease-in-out;
+    overflow: hidden; 
 }
 
 .destinations-container .image-slide{
     display: flex;
-    width: 359px;
+    width: 300px;
     height: 250px;
     padding: 0px 42.676px 0px 44.324px;
     flex-direction: column;
@@ -278,7 +276,7 @@ header.nav-links a:hover {
 
 .destinations-container .image-slide1{
     display: flex;
-    width: 50%;
+    width: 300px;
     height: 250px;
     padding: 0px 42.676px 0px 44.324px;
     flex-direction: column;
@@ -289,7 +287,7 @@ header.nav-links a:hover {
 
 .destinations-container .image-slide2{
     display: flex;
-    width: 50%;
+    width: 300px;
     height: 250px;
     padding: 0px 42.676px 0px 44.324px;
     flex-direction: column;
@@ -300,7 +298,7 @@ header.nav-links a:hover {
 
 .destinations-container .image-slide3{
     display: flex;
-    width: 50%;
+    width: 300px;
     height: 250px;
     padding: 0px 42.676px 0px 44.324px;
     flex-direction: column;
@@ -311,20 +309,13 @@ header.nav-links a:hover {
 
 .destinations-container .image-slide4{
     display: flex;
-    width: 50%;
+    width: 300px;
     height: 250px;
     padding: 0px 42.676px 0px 44.324px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url(../main/images/store.webp) lightgray 0px -136.756px / 100% 150% no-repeat;
-}
-
-.image-slide img, .image-slide1 img, .image-slide2 img, .image-slide3 img, .image-slide4 img, .image-slide5 img {
-    width: 259px;
-    height: 298px;
-    object-fit: cover;
-
 }
 
 .spin-reverse {
