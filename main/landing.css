@@ -4,6 +4,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.swiper-button-prev ,
+.swiper-button-next{
+    color: #121212;
+    height: 50px;
+    width:50px;
+    border:2px solid black;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.rows {
+    width: 100%;
+    position:absolute;
+    right: 5px;
+    bottom: 280px;
+}
+
+
 
 body {
     font-family: Arial, sans-serif;
@@ -14,9 +48,10 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+    color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
 header nav {
@@ -26,20 +61,33 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    gap:200px;
 }
 
 header .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #fff;
+    color: black;
     text-decoration: none;
+    margin: 0 auto;
 }
 
 header .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: black;
+    justify-content: flex-start; /* Alinea al inicio */
+}
+
+header .icons {
+    display: flex; /* Asegura que los íconos estén alineados horizontalmente */
+    gap: 10px; /* Espacio entre los íconos */
+    justify-content: flex-end; /* Alinea los íconos al final */
 }
 
 header .nav-links li {
@@ -47,27 +95,46 @@ header .nav-links li {
 }
 
 header .nav-links a {
-    text-decoration: none;
-    color: #fff;
+    text-decoration: underline;
+    color: black;
     font-size: 1rem;
+}
+
+header.nav-links a:hover {
+    color: gray; /* Opcional: cambia el color al pasar el ratón */
 }
 
 
 .hero {
-    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    background: url(../main/images/timmmbo.jpeg); 
     color: white;
     padding: 80px 0;
     text-align: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: flex-end;
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    font-family: 'Acumin Pro ExtraCondensed Bold', sans-serif;
+    text-transform: uppercase;
+    color :white;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    font-family: 'Acumin Pro ExtraCondensed Bold', sans-serif;
+    text-transform: uppercase;
+    color :white;
+}
+
+.hero h1:hover,
+.hero p:hover {
+    color: #ff5a5f; /* Cambia el color del texto a gris oscuro al pasar el mouse */
 }
 
 .hero .cta-button {
@@ -83,15 +150,230 @@ header .nav-links a {
     background-color: #ff3b42;
 }
 
+.timbo {
+   
+    background-image: url(../main/images/);
 
+}
 .section {
     padding: 60px 20px;
 }
 
-.container {
+.menu_container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_us {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+  
+}
+.us_style {
+    margin-right: 10px;
+    display: flex; /* Activa el uso de flexbox */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.us_style h2 {
+    color: var(--Negro-1000, #000);
+    font-family: 'Acumin Pro ExtraCondensed Bold', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.cfon3 {
+    color: var(--Negro-1000, #000);
+    font-family: 'Acumin Pro ExtraCondensed Bold', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.us_style p {
+    color: var(--Negro-1000, #000);
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: normal;
+  
+}
+.destinations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 1280px;
+    margin: auto auto;
+}
+
+.destinations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.cfon3 {
+    font-size: 44px;    
+}
+
+.slider-controls {
+    display: flex;
+    align-items: center;
+    gap: 20.417px;
+}
+
+.slider-controls button {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: none;
+}
+
+.destinations-container .city {
+    flex: 1;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;  /* Centra el contenido */
+    align-items: center;  
+    
+}
+
+.destinations-container .image-slider{
+    display: flex;
+    width:100%;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    transition: transform 30.30s ease-in-out;
+}
+
+.destinations-container .image-slide{
+    display: flex;
+    width: 359px;
+    height: 250px;
+    padding: 0px 42.676px 0px 44.324px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../main/images/store.webp) lightgray 0px -136.756px / 100% 150% no-repeat;
+}
+
+.destinations-container .image-slide1{
+    display: flex;
+    width: 50%;
+    height: 250px;
+    padding: 0px 42.676px 0px 44.324px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../main/images/store.webp) lightgray 0px -136.756px / 100% 150% no-repeat;
+}
+
+.destinations-container .image-slide2{
+    display: flex;
+    width: 50%;
+    height: 250px;
+    padding: 0px 42.676px 0px 44.324px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../main/images/store.webp) lightgray 0px -136.756px / 100% 150% no-repeat;
+}
+
+.destinations-container .image-slide3{
+    display: flex;
+    width: 50%;
+    height: 250px;
+    padding: 0px 42.676px 0px 44.324px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../main/images/store.webp) lightgray 0px -136.756px / 100% 150% no-repeat;
+}
+
+.destinations-container .image-slide4{
+    display: flex;
+    width: 50%;
+    height: 250px;
+    padding: 0px 42.676px 0px 44.324px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../main/images/store.webp) lightgray 0px -136.756px / 100% 150% no-repeat;
+}
+
+.image-slide img, .image-slide1 img, .image-slide2 img, .image-slide3 img, .image-slide4 img, .image-slide5 img {
+    width: 259px;
+    height: 298px;
+    object-fit: cover;
+
+}
+
+.spin-reverse {
+    animation: reverse-spin 1s linear infinite;
+}
+
+@keyframes reverse-spin {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.destinations-container .city a {
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.destinations-container .city img {
+    width: 100%;;
+    height: 300px;
+    object-fit: cover;
+    object-position:  50% 85%; 
+    display: block; 
+    filter: brightness(1.1);
+  
+}
+
+
+.destinations-container .city p {
+    margin-top: 7px;
+}
+
+
+.destinations-container.neighborhoods-1 .city {
+    max-width: 100%;
+}
+
+.destinations-container.neighborhoods-2 .city {
+    max-width: 50%;
+}
+
+.destinations-container.neighborhoods-2 .city img {
+    max-height: 290px;
 }
 
 form {
@@ -135,3 +417,51 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+/* ...Código existente... */
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav {
+       
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        gap:24px;
+    }
+    
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+/* Animaciones */
+.cta-button {
+    transition: transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header.dark-mode {
+    background-color: #1e1e1e;
+}
+

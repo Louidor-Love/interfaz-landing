@@ -4,33 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Landing Page </title>
-    <link rel="stylesheet" href="landin.css">
+    <title>Landing Page Profesional</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="landing.css">
 </head>
-<body>
+<body class="timbo">
     <header>
-        <nav>
-            <div class="container">
-                <a href="#" class="logo">Love's Store</a>
+        <div class="menu_container">
+            <nav>
                 <ul class="nav-links">
-                    <li><a href="#about">about us</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#services">Service</a></li>
+                     <li><a href="#services">Services</a></li>
                 </ul>
-            </div>
-        </nav>
+                <!--<button id="darkModeToggle">Modo Oscuro</button> -->
+                <a href="#" class="logo fa-beat" style="--fa-animation-duration: 2s;">Timberland's Store</a>
+                <div class="icons ms-auto">
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </div>
+            </nav>
+        </div>
     </header>
     <section class="hero">
         <div class="hero-content">
-            <h1>Welcome to my page</h1>
-            <p>we have best solution. ¡Conoce más abajo!</p>
-            <a href="#contact" class="cta-button">Contáctanos</a>
+            <h1>WELCOME TO TIMBERLAND</h1>
+            <p>We offer the best solutions. ¡Conoce más abajo!</p>
+            <a href="#contact" class="cta-button">Contact Us</a>
         </div>
     </section>
     <section id="about" class="section">
-        <div class="container">
-            <h2>¿Quiénes somos?</h2>
-            <p>Somos un equipo de expertos dedicados a ayudarte a crecer en el mundo digital. Nuestros servicios están diseñados para ofrecerte soluciones personalizadas y eficaces.</p>
+        <div class="container_us">
+            <div class="us_style">
+                <h2>Who we are?</h2>
+                <p>Since our beginnings in 1952, Timberland has been dedicated to crafting footwear, clothing, and accessories designed to withstand the most extreme conditions without compromising on style. </p>
+                <p>Our commitment lies not only in creating quality products but also in protecting the planet and supporting communities. That’s why we’ve implemented sustainable practices at every step of our process</p>
+                <p> We invite you to be part of our journey</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../main/images/botas.PNG" alt="">
+                        <h3>bot timbo</h3> 
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../main/images/botas.PNG" alt=""> 
+                        <h3>bot timbo2</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../main/images/botas.PNG" alt=""> 
+                        <h3>bot timbo3</h3>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <img src="https://via.placeholder.com/600x400" alt="Equipo profesional">
+            -->
+        </div>
+        <div class="destinations-container">
+            <div  class="destinations carousel slide">
+                <div class="cfon3 text-uppercase ft-acumin m-0 ft-xs-60">DISCOVER OUR PRODUCTS</div>
+                <div class="slider-controls ms-auto">
+                    <button type="button"  class="fa-solid fa-spinner fa-spin-pulse carousel-control-next"></button>
+                    <button type="button" class="fa-solid fa-spinner fa-spin-pulse fa-spin-reverse carousel-control-prev"></button>
+                </div>
+            </div>
+            <div class="image-slider text-uppercase ft-acumin m-0 ft-xs-60 carousel-inner">
+                <div class="image-slide destino" > 
+                    <h6>COLOMBIA</h6>
+                </div>
+                <div class="image-slide1 destino" > 
+                    <h6>MEXICO</h6>
+                </div>
+                <div class="image-slide2 destino" > 
+                    <h6>PERÚ</h6>
+                </div>
+                <div class="image-slide3 destino"> 
+                    <h6>PANAMÁ</h6>
+                </div>
+                <div class="image-slide4 destino"> 
+                    <h6>ESPAÑA</h6>
+                </div>
+                <div class="image-slide4 destino"> 
+                    <h6>ESPAÑA</h6>
+                </div>
+                <div class="image-slide4 destino"> 
+                    <h6>ESPAÑA</h6>
+                </div>
+                <div class="image-slide4 destino"> 
+                    <h6>ESPAÑA</h6>
+                </div>
+                <div class="image-slide4 destino"> 
+                    <h6>ESPAÑA</h6>
+                </div>
+                <div class="image-slide4 destino"> 
+                    <h6>ESPAÑA</h6>
+                </div>
+                <div class="image-slide4 destino"> 
+                    <h6>ESPAÑA</h6>
+                </div>
+            </div>
         </div>
     </section>
     <section id="contact" class="section">
@@ -39,15 +117,20 @@
             <form action="#" method="post">
                 <input type="text" name="name" placeholder="Tu nombre" required>
                 <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <input type="tel" name="phone" placeholder="Tu teléfono" pattern="[0-9]{10}" title="Debe contener 10 dígitos">
                 <textarea name="message" placeholder="Tu mensaje" required></textarea>
                 <button type="submit">Enviar</button>
+                <p id="formMessage"></p>
             </form>
         </div>
     </section>
     <footer>
         <div class="container">
-            <p>&copy; 2024 Mi Marca. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Timberland. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="landing.js"></script>
 </body>
 </html>
+
