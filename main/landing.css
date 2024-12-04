@@ -20,6 +20,18 @@
     text-align: center;
 }
 
+.swiper-slide img {
+    height: 400px; 
+    object-fit: cover; 
+    width: 100%; 
+}
+
+.swiper-slide h3 {
+    font-size: 1rem; /* Tamaño del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+
 .swiper-button-prev ,
 .swiper-button-next{
     color: #121212;
@@ -46,7 +58,7 @@ body {
     color: #333;
 }
 
-/* Encabezado */
+
 header {
     color: black;
     height: 80px;
@@ -85,9 +97,9 @@ header .nav-links {
 }
 
 header .icons {
-    display: flex; /* Asegura que los íconos estén alineados horizontalmente */
-    gap: 10px; /* Espacio entre los íconos */
-    justify-content: flex-end; /* Alinea los íconos al final */
+    display: flex; 
+    gap: 10px; 
+    justify-content: flex-end; 
 }
 
 header .nav-links li {
@@ -101,7 +113,7 @@ header .nav-links a {
 }
 
 header.nav-links a:hover {
-    color: gray; /* Opcional: cambia el color al pasar el ratón */
+    color: gray; /
 }
 
 
@@ -112,7 +124,7 @@ header.nav-links a:hover {
     text-align: center;
     height: 600px;
     display: flex;
-    flex-direction: column; /* Coloca los elementos en columna */
+    flex-direction: column; 
     justify-content: flex-end;
 }
 
@@ -134,7 +146,7 @@ header.nav-links a:hover {
 
 .hero h1:hover,
 .hero p:hover {
-    color: #ff5a5f; /* Cambia el color del texto a gris oscuro al pasar el mouse */
+    color: #ff5a5f; 
 }
 
 .hero .cta-button {
@@ -148,6 +160,7 @@ header.nav-links a:hover {
 
 .hero .cta-button:hover {
     background-color: #ff3b42;
+  
 }
 
 .timbo {
@@ -156,7 +169,9 @@ header.nav-links a:hover {
 
 }
 .section {
+    width: 100%;
     padding: 60px 20px;
+    margin: 0 0;
 }
 
 .menu_container{
@@ -178,13 +193,22 @@ header.nav-links a:hover {
 .container {
     display: flex;
     justify-content:center;
+    width: 100%; 
+    padding: 0 20px;
+    
   
+}
+form {
+    width: 100%;
+}
+form h2 {
+    margin-left: 200px;
 }
 .us_style {
     margin-right: 10px;
-    display: flex; /* Activa el uso de flexbox */
-    flex-direction: column; /* Organiza los elementos en una columna */
-    gap: 20px; /* Espacio entre los elementos */
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
 }
 
 .us_style h2 {
@@ -249,73 +273,109 @@ header.nav-links a:hover {
     padding-bottom: 1rem;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;  /* Centra el contenido */
+    justify-content: center;  
     align-items: center;  
     
 }
 
 .destinations-container .image-slider{
     display: flex;
-    width: 80%;
+    width: 100%;
     align-items: flex-start;
     gap: 8px;
     flex-shrink: 0;
     overflow: hidden; 
 }
 
+.destinations-container h6 {
+    margin-bottom: 10px; 
+    font-size: 1.2rem; 
+    color: whitesmoke; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .destinations-container .image-slide{
     display: flex;
     width: 300px;
+    flex-shrink: 0;
     height: 250px;
     padding: 0px 42.676px 0px 44.324px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background: url(../main/images/store.webp) lightgray 0px -136.756px / 100% 150% no-repeat;
+    background: url(../main/images/store4.jpeg)  0px -136.756px / 100% 150% no-repeat;
 }
 
 .destinations-container .image-slide1{
     display: flex;
     width: 300px;
+    flex-shrink: 0;
     height: 250px;
     padding: 0px 42.676px 0px 44.324px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background: url(../main/images/store.webp) lightgray 0px -136.756px / 100% 150% no-repeat;
+    background: url(../main/images/store5.jpeg) 0px -136.756px / 100% 150% no-repeat;
 }
 
 .destinations-container .image-slide2{
     display: flex;
     width: 300px;
     height: 250px;
+    flex-shrink: 0;
     padding: 0px 42.676px 0px 44.324px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background: url(../main/images/store.webp) lightgray 0px -136.756px / 100% 150% no-repeat;
+    background: url(../main/images/store.webp)0px -136.756px / 100% 150% no-repeat;
 }
 
 .destinations-container .image-slide3{
     display: flex;
     width: 300px;
+    flex-shrink: 0;
     height: 250px;
     padding: 0px 42.676px 0px 44.324px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background: url(../main/images/store.webp) lightgray 0px -136.756px / 100% 150% no-repeat;
+    background: url(../main/images/store6.webp) 0px -136.756px / 100% 150% no-repeat;
 }
 
 .destinations-container .image-slide4{
     display: flex;
     width: 300px;
+    flex-shrink: 0;
     height: 250px;
     padding: 0px 42.676px 0px 44.324px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background: url(../main/images/store.webp) lightgray 0px -136.756px / 100% 150% no-repeat;
+    background: url(../main/images/store7.jpg) 0px -136.756px / 100% 150% no-repeat;
+}
+
+.destinations-container .image-slide5{
+    display: flex;
+    width: 300px;
+    flex-shrink: 0;
+    height: 250px;
+    padding: 0px 42.676px 0px 44.324px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: url(../main/images/store8.avif) 0px -136.756px / 100% 150% no-repeat;
+}
+
+.destinations-container .image-slide6{
+    display: flex;
+    width: 300px;
+    flex-shrink: 0;
+    height: 250px;
+    padding: 0px 42.676px 0px 44.324px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: url(../main/images/store9.webp) 0px -136.756px / 100% 150% no-repeat;
 }
 
 .spin-reverse {
@@ -347,24 +407,6 @@ header.nav-links a:hover {
     display: block; 
     filter: brightness(1.1);
   
-}
-
-
-.destinations-container .city p {
-    margin-top: 7px;
-}
-
-
-.destinations-container.neighborhoods-1 .city {
-    max-width: 100%;
-}
-
-.destinations-container.neighborhoods-2 .city {
-    max-width: 50%;
-}
-
-.destinations-container.neighborhoods-2 .city img {
-    max-height: 290px;
 }
 
 form {
@@ -412,7 +454,7 @@ footer {
 /* ...Código existente... */
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 768px),(max-width: 1200px) {
     header nav {
        
         margin: 0 auto;
@@ -420,7 +462,16 @@ footer {
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
-        gap:24px;
+        gap:30px;
+    }
+
+    header .logo {
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        text-decoration: none;
+        margin: 0 auto;
     }
     
 
