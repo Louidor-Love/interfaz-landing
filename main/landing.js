@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let scrollAmount = itemWidth * itemsPerScroll;
     let currentPosition = 0;
     let isScrolling = false;
+    //Define la función smoothScroll, que maneja el desplazamiento suave 
     function smoothScroll(direction) {
         if (isScrolling) return; 
         isScrolling = true;
@@ -26,11 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 8); 
     }
+    //Cuando se hace clic en este botón, se llama a la función que mueve el contenedor hacia la izquierda.
     document.querySelector('.carousel-control-prev').addEventListener('click', () => {
         if  (!isScrolling && currentPosition > 0) {
             smoothScroll(-1);
         }    
     });
+    //Esta línea mueve el contenedor hacia la derecha cuando se hace clic en el botón.
     document.querySelector('.carousel-control-next').addEventListener('click', () => {
         if (!isScrolling && currentPosition < slider.scrollWidth - slider.clientWidth) { 
             smoothScroll(1);
@@ -66,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
 
         // Mostrar mensaje de confirmación
-        message.textContent = "¡Gracias por tu mensaje! Lo hemos recibido.";
+        message.textContent = "Thank you for your message! We have received it.";
         message.style.color = 'green'; // Cambiar el color a verde para indicar éxito
 
         // Opcional: limpiar el formulario después de mostrar el mensaje
